@@ -1,16 +1,16 @@
 # Business Logic
 
-> Development of a/an `<Platform>` `<App/Software Type>` using `<Tech Stack>` for `<Userbase>`
+> Development of a/an Android-based app that lets you find, visit, and care for City Strays using React Native, Supabase, Google Maps SDK for the general public
 
 - Allowed Platforms: Web, Android
 
 ## Project Details
 
-- Company/Startup/Team Name: `<Team Name>`
-- Project Code Name: `<Code Name>`
-- Project Short Code: `<short-code>`
-- Short Description: `<project-description>`
-- Long Description: `<long-description>`
+- Company/Startup/Team Name: CritterCare
+- Project Code Name: Stray
+- Project Short Code: ST
+- Short Description: find, visit, and care for City Strays
+- Long Description: An app that records city strays allowing people to find, visit, and care for the registered strays.
 
 ## User Levels
 
