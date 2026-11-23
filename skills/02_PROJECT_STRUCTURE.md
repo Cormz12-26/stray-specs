@@ -2,7 +2,7 @@
 
 **Purpose:** Locate project components and decide where future code and documentation belong.
 
-**Confidence note:** Verified against the supplied working-tree snapshot (no commit exists) on 2026-11-23. The code wins (see 16).
+**Confidence note:** Verified against the current working tree and specs baseline commit `47660a2` on 2026-11-23. The code wins (see 16).
 
 ## Observed tree
 
@@ -19,17 +19,22 @@ stray-ecosystem/
   stray-specs/
     AGENTS.md
     business-logic-v1.0.md
+    business-logic-v1.1-proposed.md
+    db-design-choices.md
+    db-schema/
+      v1.0.0.sql
     git-guidelines.md
     sense-making.md
     skills/                 # this knowledge set
 ```
 
-The three app directories currently contain only their instruction file; each has its own empty Git repository. The specs directory also has its own empty repository. No source tree, build files, tests, CI files, or manifests were present.
+Each product/specs directory has its own `main` branch and an initial documentation commit. The three app directories contain only `AGENTS.md`; no application source, build files, tests, CI files, or manifests were present. The v1.1 business logic and v1.0.0 SQL are proposals, not deployed implementation.
 
 ## Placement rules
 
 - Put API implementation in `stray-api`, Android implementation in `stray-android`, and web implementation in `stray-web` only after confirming each project's actual scaffold and local instructions.
 - Keep ecosystem requirements and engineering knowledge in `stray-specs`; this handoff explicitly places reusable skills in `stray-specs/skills/`.
+- Keep full Supabase SQL snapshots in `stray-specs/db-schema/` and forward migrations in `stray-specs/db-migrations/`; follow the version rules in `db-design-choices.md` §10.
 - Do not invent subdirectory names or move files based on this provisional tree. Follow the framework's established layout when code is added.
 
 ## Naming

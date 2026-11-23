@@ -2,7 +2,7 @@
 
 **Purpose:** Describe the current ecosystem boundary and identify what must be confirmed before designing across components.
 
-**Confidence note:** Verified against the supplied working-tree snapshot (no commit exists) on 2026-11-23. The code wins (see 16).
+**Confidence note:** Verified against the current working tree and specs baseline commit `47660a2` on 2026-11-23. The code wins (see 16).
 
 ## Model
 
@@ -25,12 +25,13 @@ The API description implies client → API → Supabase and response back to cli
 
 - The only stated integration dependency is Supabase's database API (API `AGENTS.md`); its exact service and access mode are unspecified.
 - Google Sign-In appears as a system requirement in `business-logic-v1.0.md`; no OAuth client, token exchange, or identity model is present.
-- The business-logic document is a template with unresolved placeholders and incomplete requirements. Treat it as intent, not an accepted specification.
+- `business-logic-v1.0.md` remains a template; `business-logic-v1.1-proposed.md` and `db-design-choices.md` describe proposed product and sync decisions. Treat the proposal as intent until approved.
+- `db-schema/v1.0.0.sql` is a proposed Supabase snapshot, not evidence that the schema has been deployed or that a local SQLite schema exists.
 - No architecture decision records or documented alternatives were found.
 
 ## Ranked debt register
 
-1. **Critical evidence gap:** component repositories have no commits or tracked source. New changes cannot be reviewed against existing behavior.
-2. **Contract gap:** no API schema, database schema, auth contract, or client/server version policy exists in the supplied files; integration changes have unknown blast radius (see 04, 07, 08).
-3. **Product-definition gap:** project identity and functional requirements remain placeholders; scope and acceptance criteria are unknown.
+1. **Critical evidence gap:** component repositories now have initial documentation commits but no application source. Changes cannot be reviewed against runtime behavior.
+2. **Contract gap:** a proposed server schema exists, but no applied schema, local SQLite counterpart, API contract, auth implementation, or client/server version policy exists; integration changes have unknown blast radius (see 04, 07, 08).
+3. **Product-definition gap:** the v1.1 proposal is not approved and still leaves pilot geography, species, privacy/retention values, and launch thresholds open.
 4. **Operations gap:** no runtime, observability, deployment, or recovery description exists (see 05, 10).

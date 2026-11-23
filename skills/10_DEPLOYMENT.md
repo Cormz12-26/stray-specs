@@ -2,7 +2,7 @@
 
 **Purpose:** Preserve the written release gates and flag the placeholders and absent deployment evidence.
 
-**Confidence note:** Verified against the supplied working-tree snapshot (no commit exists) on 2026-11-23. The code wins (see 16).
+**Confidence note:** Verified against the current working tree and specs baseline commit `47660a2` on 2026-11-23. The code wins (see 16).
 
 ## What the specs say
 
@@ -10,7 +10,7 @@
 
 ## What is not verified
 
-No branch, commit, CI pipeline, build command, artifact, environment, host, release credential, deployment procedure, rollback path, or production approval record exists in the supplied repositories. Actual release order across applications is unknown.
+Each repository has an initial documentation commit on `main`; no `beta`/`release` branches, CI pipeline, build command, artifact, environment, host, release credential, deployment procedure, rollback path, or production approval record is present. Actual release order across applications is unknown.
 
 ## Safe release checklist (policy, not an executable runbook)
 

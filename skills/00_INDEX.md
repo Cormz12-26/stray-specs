@@ -2,7 +2,7 @@
 
 **Purpose:** Choose the right project note for a task and keep the skills set current.
 
-**Confidence note:** Verified against the supplied working-tree snapshot (no commit exists) on 2026-11-23. The code wins (see 16).
+**Confidence note:** Verified against the current working tree and specs baseline commit `47660a2` on 2026-11-23. The code wins (see 16).
 
 ## Read by task
 
@@ -46,4 +46,5 @@ Add a rough entry to `INBOX.md` rather than withholding a useful observation. In
 
 ## Changelog
 
+- 2026-11-23: Added the proposed Supabase v1.0.0 snapshot and DB versioning rules; refreshed the related architecture, database, security, and workflow notes. The schema was parsed but not executed against Supabase.
 - 2026-11-23: Created the initial skills set from the available instructions and specs. Application source, manifests, commits, and incidents were not present; unverified areas are called out rather than guessed.

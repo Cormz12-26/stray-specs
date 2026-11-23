@@ -2,7 +2,7 @@
 
 **Purpose:** Give contributors safe first steps in this workspace and explain why normal build workflows are not yet available.
 
-**Confidence note:** Verified against the supplied working-tree snapshot (no commit exists) on 2026-11-23. The code wins (see 16).
+**Confidence note:** Verified against the current working tree and specs baseline commit `47660a2` on 2026-11-23. The code wins (see 16).
 
 ## Setup
 
@@ -12,10 +12,10 @@ No setup instructions, language runtimes, manifests, build tools, or application
 
 1. Read the root `AGENTS.md` and the selected component's `AGENTS.md`.
 2. Inspect its actual tree, Git status/history, manifests, entry points, tests, and CI before editing.
-3. Confirm whether implementation and remote history are available; do not treat an empty local repository as a clean, complete product.
+3. Confirm whether implementation and remote history are available; the current initial commits contain documentation only, not a complete product baseline.
 4. Record any verified architecture or cross-component coupling in 01 and 04.
 
-**Why:** The current folders have no commits or tracked source, so assumed setup and build steps would be misleading (see 06 #1).
+**Why:** The current folders have no application source, so assumed setup and build steps would be misleading even though documentation commits now exist (see 06 #1).
 
 ## Change an API/client contract
 
